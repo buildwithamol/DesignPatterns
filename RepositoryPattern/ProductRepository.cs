@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DesignPatterns.RepositoryPattern
 {
-    public class ProductRepository : IProductRepository<Product>
+    public class ProductRepository : IRepository<Product>
     {
         private readonly AppDbContext _dbContext;
 

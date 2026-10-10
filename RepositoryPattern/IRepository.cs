@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.RepositoryPattern
 {
-    public interface IProductRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
         Task<T?> GetByIdAsync(int id);
         Task<List<T>> GetAllAsync();
